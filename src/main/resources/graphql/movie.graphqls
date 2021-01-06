@@ -1,0 +1,13 @@
+type Movie {
+    id: ID!,
+    author:String,
+    url:String
+}
+
+type Query {
+    getMovies(limit:Int):[Movie]
+}
+
+type Mutation {
+    addMovie(author:String, url:String):Movie
+}
